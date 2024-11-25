@@ -1,0 +1,22 @@
+# Slicing Syntax: [start:stop:step]
+# Start: Index where the slice begins (inclusive).
+# Stop: Index where the slice ends (exclusive).
+# Step: Interval between elements.
+
+# Step Parameter in Slicing
+# Positive Step: Moves forward by intervals.
+count = list(range(10))
+print(count[::2])  # Output: [0, 2, 4, 6, 8]
+
+# Negative Step: Moves backward by intervals.
+count = list(range(10))
+print(count[::-2])  # Output: [9, 7, 5, 3, 1]
+
+# Negative Indices Without Reversing: Combine negative indices with a positive step:
+numbers = list(range(10))
+print(numbers[-8:-2:1])  # Output: [2, 3, 4, 5, 6, 7]
+
+# Reverse List
+count = list(range(10))
+print(count[::-1]) # Output: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
